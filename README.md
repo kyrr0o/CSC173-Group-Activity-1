@@ -116,7 +116,7 @@ The network was trained for 800 epochs, where each epoch represents one complete
     ```
     The weights and biases are updated using the calculated gradients scaled by the learning rate (lr). This step enables the network to gradually minimize the loss over time.
 
-
+<img width="576" height="455" alt="image" src="https://github.com/user-attachments/assets/f577bcef-a70d-476c-a6c1-ba2423f17057" />
 
 
 
