@@ -116,55 +116,28 @@ The network was trained for 800 epochs, where each epoch represents one complete
     ```
     The weights and biases are updated using the calculated gradients scaled by the learning rate (lr). This step enables the network to gradually minimize the loss over time.
 
+## MODEL EVALUATION
+After training, the model is evaluated using the testing dataset (X_test) to determine its accuracy on unseen data.
+
+```python
+z1 = np.dot(X_test, W1) + b1
+a1 = sigmoid(z1)
+z2 = np.dot(a1, W2) + b2
+y_pred_test = sigmoid(z2)
+```
+The test data passes through the network using the learned weights (W1, W2) and biases (b1, b2). The outputs are again processed through the sigmoid activation function, generating predicted probabilities between 0 and 1 for each test sample.
+
+```python
+# Prediction and Accuracy Calculation
+preds = (y_pred_test > 0.5).astype(int)
+acc = np.mean(preds == y_test)
+print(f"\nTest Accuracy: {acc*100:.2f}%")
+```
+The predictions (y_pred_test) are thresholded at 0.5 which means that the values above 0.5 are classified as 1 (positive class) and the values below or equal to 0.5 are classified as 0 (negative class). These predicted labels (preds) are then compared to the true labels (y_test). Lastly, the accuracy is computed as the proportion of correct predictions out of the total number of test samples.
+
+## RESULT AND LOSS VISUALIZATION
+The members obtained a high result 91.23% test accuracy. This means that the trained neural network correctly classified approximately 91.23% of the test data, indicating that the model successfully learned from the training data and generalized well to unseen samples.
+
 <img width="576" height="455" alt="image" src="https://github.com/user-attachments/assets/f577bcef-a70d-476c-a6c1-ba2423f17057" />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## BACKPROPAGATION
-
+The training loss plot shows a rapid decrease in error during the first few epochs, followed by a gradual flattening curve. This indicates that the neural network successfully learned from the data. The loss continuously decreased and eventually stabilized, meaning the model reached convergence. Overall, this confirms that the network effectively minimized prediction errors and achieved good learning performance.
