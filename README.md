@@ -136,7 +136,7 @@ print(f"\nTest Accuracy: {acc*100:.2f}%")
 The predictions (y_pred_test) are thresholded at 0.5 which means that the values above 0.5 are classified as 1 (positive class) and the values below or equal to 0.5 are classified as 0 (negative class). These predicted labels (preds) are then compared to the true labels (y_test). Lastly, the accuracy is computed as the proportion of correct predictions out of the total number of test samples.
 
 ## RESULT AND LOSS VISUALIZATION
-The members obtained a high result 91.23% test accuracy. This means that the trained neural network correctly classified approximately 91.23% of the test data, indicating that the model successfully learned from the training data and generalized well to unseen samples.
+The group obtained a high result 91.23% test accuracy. This means that the trained neural network correctly classified approximately 91.23% of the test data, indicating that the model successfully learned from the training data and generalized well to unseen samples.
 
 <img width="576" height="455" alt="image" src="https://github.com/user-attachments/assets/f577bcef-a70d-476c-a6c1-ba2423f17057" />
 
