@@ -141,6 +141,8 @@ The group obtained a high result 91.23% test accuracy. This means that the train
 
 <img width="576" height="455" alt="image" src="https://github.com/user-attachments/assets/f577bcef-a70d-476c-a6c1-ba2423f17057" />
 
+The training loss plot shows a rapid decrease in error during the first few epochs, followed by a gradual flattening curve. This indicates that the neural network successfully learned from the data. The loss continuously decreased and eventually stabilized, meaning the model reached convergence. Overall, this confirms that the network effectively minimized prediction errors and achieved good learning performance.
+
 ## TEAM COLLABORATION
 Each member contributed to different components of the network:
 - Weight and bias initialization
@@ -152,7 +154,7 @@ Each member contributed to different components of the network:
 ## HOW TO RUN
 1. Clone the GitHub repository:
    ```
-   git clone [[repository_url](https://github.com/kyrr0o/CSC173-Group-Activity-1.git)]
+   git clone [repository_url]
    ```
 2. Open the Jupyter notebook or Colab file.
 3. Run all cells sequentially.
@@ -161,20 +163,3 @@ Each member contributed to different components of the network:
 ## SUMMARY
 This project demonstrates how a simple neural network can be built completely from scratch using Python and NumPy. By applying forward propagation, loss computation, and backpropagation, the model successfully classified breast cancer data with over 91% accuracy. Through this activity, we gained hands-on understanding of how neural networks learn, adjust weights, and make predictions, strengthening our foundation in machine learning concepts.
 
-**Video Link:**
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-The training loss plot shows a rapid decrease in error during the first few epochs, followed by a gradual flattening curve. This indicates that the neural network successfully learned from the data. The loss continuously decreased and eventually stabilized, meaning the model reached convergence. Overall, this confirms that the network effectively minimized prediction errors and achieved good learning performance.
