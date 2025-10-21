@@ -1,6 +1,7 @@
 # CSC173: NEURAL NETWORK
 
 **Date:** October 09, 2025
+
 **Group Members:**
 1. Kaycee T. Nalzaro
 2. 
@@ -154,7 +155,7 @@ Each member contributed to different components of the network:
 ## HOW TO RUN
 1. Clone the GitHub repository:
    ```
-   git clone [repository_url]
+   git clone https://github.com/kyrr0o/CSC173-Group-Activity-1.git
    ```
 2. Open the Jupyter notebook or Colab file.
 3. Run all cells sequentially.
