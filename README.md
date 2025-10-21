@@ -1,10 +1,11 @@
 # CSC173: NEURAL NETWORK
 
+**Date:** October 09, 2025
 **Group Members:**
 1. Kaycee T. Nalzaro
 2. 
 
-## INTRODUCTION
+## PROJECT OVERVIEW
 Artificial Neural Network (ANN) is a computational model inspired by the human brain that uses interconnected nodes to process information and make decisions. This group activity aims to build a simple ANN from scratch using only **Python**,**Numpy** and **Matplotlib** for plotting, without any machine-learning libraries. The purpose of this activity is to understand how neural networks work, including forward propagation, loss computation, and backpropagation with gradient descent. The model will be used to perform **binary classification** on the **Breast Cancer Diagnostic Dataset** by using only two features.
 
 ## DATA PREPARATION
@@ -26,7 +27,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 ```
 The dataset contains measurements of cell nuclei from breast cancer biopsies, with targets labeled as 0 = malignant or 1 = benign. We only selected the first two features which will contain the inout layer with two neurons. We used **StandardScaler**, a data processing tool to normalize the features and to ensure faster and more stable training. We then split the dataset following the standard data proportion rule, training (80%) and testing (20%) sets.
 
-## NETWORK DESIGN
+## NETWORK ARCHITECTURE
 The neural netwrok structure consists three layers with each having different numbers of neurons and activation fucntions. **Sigmoid Function** is an activation function that is used in neural networks to activate neurons. 
 
 ```python
@@ -46,7 +47,7 @@ b2 = np.zeros((1, output_neurons))
 ```
 Weights were initialized randomly, while biases were initialized to zero.
 
-## TRAINING 
+## IMPLEMENTATION DETAILS 
 The neural network learns from the training data by repeatedly adjusting its weights and biases to minimize error.
 
 ```python
@@ -86,7 +87,7 @@ The network was trained for 800 epochs, where each epoch represents one complete
    ```
    The Mean Squared Error (MSE) function measures the difference between predicted and actual outputs. The loss values are stored for each epoch to track performance.
    
-3. **Backpropagation**   
+2. **Backpropagation**   
     After calculating the loss, the model performs backpropagation, a process that adjusts weights and biases by propagating the error backward through the network.
     
     ```python
@@ -139,5 +140,41 @@ The predictions (y_pred_test) are thresholded at 0.5 which means that the values
 The group obtained a high result 91.23% test accuracy. This means that the trained neural network correctly classified approximately 91.23% of the test data, indicating that the model successfully learned from the training data and generalized well to unseen samples.
 
 <img width="576" height="455" alt="image" src="https://github.com/user-attachments/assets/f577bcef-a70d-476c-a6c1-ba2423f17057" />
+
+## TEAM COLLABORATION
+Each member contributed to different components of the network:
+- Weight and bias initialization
+- Forward propagation coding
+- Loss function implementation
+- Backpropagation and gradient computation
+- Training loop and visualization
+
+## HOW TO RUN
+1. Clone the GitHub repository:
+   ```
+   git clone [[repository_url](https://github.com/kyrr0o/CSC173-Group-Activity-1.git)]
+   ```
+2. Open the Jupyter notebook or Colab file.
+3. Run all cells sequentially.
+4. Explore training loss plot and decision boundary visualizations.
+
+## SUMMARY
+This project demonstrates how a simple neural network can be built completely from scratch using Python and NumPy. By applying forward propagation, loss computation, and backpropagation, the model successfully classified breast cancer data with over 91% accuracy. Through this activity, we gained hands-on understanding of how neural networks learn, adjust weights, and make predictions, strengthening our foundation in machine learning concepts.
+
+**Video Link:**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 The training loss plot shows a rapid decrease in error during the first few epochs, followed by a gradual flattening curve. This indicates that the neural network successfully learned from the data. The loss continuously decreased and eventually stabilized, meaning the model reached convergence. Overall, this confirms that the network effectively minimized prediction errors and achieved good learning performance.
