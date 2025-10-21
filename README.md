@@ -1,10 +1,10 @@
-# CSC173: NEURAL NETWORK
+# CSC173 Activity 01 - Neural Network from Scratch
 
 **Date:** October 09, 2025
 
 **Group Members:**
 1. Kaycee T. Nalzaro
-2. 
+2. Preciano Maglasang
 
 ## PROJECT OVERVIEW
 Artificial Neural Network (ANN) is a computational model inspired by the human brain that uses interconnected nodes to process information and make decisions. This group activity aims to build a simple ANN from scratch using only **Python**,**Numpy** and **Matplotlib** for plotting, without any machine-learning libraries. The purpose of this activity is to understand how neural networks work, including forward propagation, loss computation, and backpropagation with gradient descent. The model will be used to perform **binary classification** on the **Breast Cancer Diagnostic Dataset** by using only two features.
